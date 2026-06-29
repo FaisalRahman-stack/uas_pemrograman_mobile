@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Uas_mobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Warna utama tetap lavender agar konsisten dengan gambar -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar berwarna lavender dengan ikon gelap -->
+        <item name="android:statusBarColor">@color/lavender</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Background otomatis putih/terang -->
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
+    <style name="Theme.Uas_mobile.NoActionBar.FullScreen" parent="Theme.Uas_mobile">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
